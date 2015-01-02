@@ -1,0 +1,119 @@
+.dark-black-text {
+    color: #444444 !important;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 0 8px #888888;
+}
+
+.navbar-brand {
+    padding-right: 0;
+}
+
+.icon-bar {
+    background-color: #7f7f7f !important;
+}
+
+.logo {
+    max-width: 10%;
+    margin-bottom: 4em;
+}
+
+.brand {
+    font-size: 4vw;
+}
+
+.bluebck {
+    background-color: #4285F4 !important;
+    color: #FFFFFF !important;
+}
+
+.bluefnt {
+    color: #4285F4 !important;
+}
+
+.greyfnt {
+    color: #616062 !important;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.currentsection {
+    height: 85% !important;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2) !important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+#homefab {
+    position: fixed;
+    z-index: 100;
+    background-color: #ffffff;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#runner-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 20%;
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.05s ease;
+    -moz-transition: all 0.05s ease;
+    -o-transition: all 0.05s ease;
+    transition: all 0.05s ease;
+}
+
+.loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: #F5F5F5;
+}
+
+@media (max-width: 990px) {
+    .logo {
+        max-width: 25%;
+        margin-bottom: 2em;
+    }
+
+    .left {
+        float: initial;
+    }
+
+    .right {
+        float: initial;
+    }
+
+    .brand {
+        font-size: 7vw;
+    }
+
+    .btn-lg {
+        padding: .4em 5em !important;
+        font-size: 22px !important;
+        line-height: normal !important;
+    }
+}

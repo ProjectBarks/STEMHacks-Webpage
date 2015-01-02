@@ -1,0 +1,23 @@
+{
+  "name": "STEMHacks",
+  "version": "0.1.0",
+  "description": "The STEMHacks Website",
+  "homepage": "http://stemhacks.com",
+  "author": {
+    "name": "Brandon Barker",
+    "email": "brandon@brandonbarker.me",
+    "web": "http://brandonbarker.me"
+  },
+  "dependencies": {
+    "bower": "*",
+    "bower-requirejs": "*",
+    "requirejs": "*"
+  },
+  "scripts": {
+    "install": "bower install; bower-requirejs -c app/libs/app.js; ./node_modules/requirejs/bin/r.js -o app.build.js",
+    "postinstall": "rm app/css.txt; for i in $(bower list --path | grep \"\\.css\"); do echo '<link rel=\"stylesheet\" type=\"text/css\" href=\"'$(echo $i | tr -d ' ' | cut -d \"'\" -f 2)'\">' >> 'app/css.txt'; done"
+  },
+  "preferGlobal": true,
+  "private": true,
+  "license": "MIT"
+}

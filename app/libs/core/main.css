@@ -1,10 +1,31 @@
-.dark-black-text {
-    color: #444444 !important;
+html * {
+    font-family: 'Roboto', 'Material-Design-Icons', sans-serif !important;
+}
+
+
+.animate-half {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+.animate {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.navbar-main {
+    background-color: #ffffff !important;
+    box-shadow: 0 0 8px #888888 !important;
 }
 
 .navbar {
-    background-color: #ffffff;
-    box-shadow: 0 0 8px #888888;
+    background-color: transparent;
+    box-shadow: 0 0 0 #ffffff;
 }
 
 .navbar-brand {
@@ -22,11 +43,16 @@
 
 .brand {
     font-size: 4vw;
+    font-weight: 300;
 }
 
 .bluebck {
     background-color: #4285F4 !important;
     color: #FFFFFF !important;
+}
+
+.blackfnt {
+    color: #444444 !important;
 }
 
 .bluefnt {
@@ -35,6 +61,14 @@
 
 .greyfnt {
     color: #616062 !important;
+}
+
+.whitefnt {
+    color: #ffffff !important;
+}
+
+.whitefnt:hover {
+    color: #BABABA !important;
 }
 
 .left {
@@ -48,10 +82,6 @@
 .currentsection {
     height: 85% !important;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2) !important;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
 }
 
 .notransition {
@@ -61,14 +91,20 @@
     transition: none !important;
 }
 
+.loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: #F5F5F5;
+}
+
 #homefab {
     position: fixed;
     z-index: 100;
     background-color: #ffffff;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
 }
 
 #runner-loading {
@@ -83,14 +119,9 @@
     transition: all 0.05s ease;
 }
 
-.loader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: #F5F5F5;
+#home {
+    background-image: url('background.png');
+    background-size: cover;
 }
 
 @media (max-width: 990px) {

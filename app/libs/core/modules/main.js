@@ -27,7 +27,7 @@ require(['pagepiling', 'core/modules/ui'],
 );
 
 require(['jquery-legacy', 'core/modules/ui'],
-    function(jquery, ui) {
+    function (jquery, ui) {
         $(window).resize(function () {
             ui.fabCheck(true);
         });

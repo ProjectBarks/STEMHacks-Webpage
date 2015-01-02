@@ -28,15 +28,17 @@ define(['jquery-legacy'], function () {
         },
         update: function (index) {
             if (index == 0) {
-                nav.fadeOut()
+                nav.removeClass('navbar-main');
+                nav.find('.blackfnt').removeClass('blackfnt').addClass('whitefnt');
             } else {
-                nav.fadeIn();
+                nav.addClass('navbar-main');
+                nav.find('.whitefnt').removeClass('whitefnt').addClass('blackfnt');
             }
             if (cIndex != null) {
-                sections.eq(cIndex).removeClass('currentsection')
+                sections.eq(cIndex).removeClass('currentsection animate-half')
             }
             if (index < sections.size() - 1) {
-                sections.eq(index).addClass('currentsection');
+                sections.eq(index).addClass('currentsection animate-half');
                 cIndex = index;
             } else {
                 cIndex = null;

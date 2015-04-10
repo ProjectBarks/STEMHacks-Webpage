@@ -1,6 +1,0 @@
-<link rel="stylesheet" type="text/css" href="Hover:">
-<link rel="stylesheet" type="text/css" href="app/libs/vendor/Hover/css/hover.css">
-<link rel="stylesheet" type="text/css" href="app/libs/vendor/bootstrap-material-design/dist/css/material.css">
-<link rel="stylesheet" type="text/css" href="app/libs/vendor/bootstrap-material-design/dist/css/ripples.css">
-<link rel="stylesheet" type="text/css" href="app/libs/vendor/bootstrap/dist/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="app/libs/vendor/pagepiling.js/jquery.pagepiling.css">

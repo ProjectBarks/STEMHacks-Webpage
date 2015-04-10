@@ -2,7 +2,7 @@
 ### Node template
 # Logs
 logs
-*.log
+home/node_modules/bower/node_modules/update-notifier/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/libpeerconnection.log
 
 # Runtime data
 pids

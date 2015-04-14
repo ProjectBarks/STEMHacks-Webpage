@@ -40,7 +40,7 @@ require(['toastr', 'jquery'], function (toastr) {
                     }
                     toastr.success("Email Sent!");
                 },
-                error: function (request, status, error) {
+                error: function (request, status) {
                     toastr.error("Error Code: " + status);
                     console.log(request.responseText);
                 }
@@ -68,7 +68,7 @@ require(['toastr', 'jquery'], function (toastr) {
                         preview.append("<p>" + result[i] + "</p>");
                     }
                 },
-                error: function (request, status, error) {
+                error: function () {
                     var preview = $("#email_preview");
                     preview.html("");
                     preview.append("<p>Error<p>");
